@@ -172,7 +172,7 @@ describe('Central de Atendimento ao Cliente TAT', function() {
         cy.contains('Talking About Testing').should('be.visible')
     })
     //Exercício extra 2
-    it.only('Testa a página da política de privacidade de forma independente', function() {
+    it('Testa a página da política de privacidade de forma independente', function() {
         cy.visit('./src/privacy.html')
         cy.title().should('be.equal', 'Central de Atendimento ao Cliente TAT - Política de privacidade')
         cy.contains('Talking About Testing').should('be.visible')
@@ -183,5 +183,7 @@ describe('Central de Atendimento ao Cliente TAT', function() {
     //"cy:open:mobile": "cypress open --config viewportWidth=410 viewportHeight=860",
     //Exercício extra
     //adicionada configuração para executar o Cypress em modo headless e em outra resolução ao arquivo package.json 
-    //"test:mobile": "cypress run --config viewportWidth=410 viewportHeight=860",
+    //"test:mobile": "cypress run --config viewportWidth=410 viewportHeight=860"
+
+    //SEÇÃO 10 - Documentação do projeto de testes automatizados
 })
